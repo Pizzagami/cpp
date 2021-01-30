@@ -5,14 +5,14 @@
 int main(void){
 
 	Contact		list_contact[8];
-	std::string	str;
+	std::string	str , jj;
 	int			i = 0;
 	int			j;
 
 	while (1)
 	{
 		std::cout << "Que desirez vous faire ?" << std::endl;
-		std::cin >> str;
+		std::getline(std::cin, str);
 		if (str == std::string("EXIT"))
 			return (0);
 		else if (str == std::string ("ADD"))
@@ -37,7 +37,11 @@ int main(void){
 					j++;
 				}
 				std::cout << "Quel contact souhaitez vous voir ?" << std::endl << "Index du contact : ";
-				std::cin >> j;
+				std::getline(std::cin, jj);
+				if (jj.length() == 1)
+					j = std::stoi(jj, 0, 10);
+				else
+					j = -2;
 				if (j >= 0 && j < i)
 					list_contact[j].show_contact();
 				else
