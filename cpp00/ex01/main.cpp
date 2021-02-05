@@ -38,7 +38,7 @@ int main(void){
 				}
 				std::cout << "Quel contact souhaitez vous voir ?" << std::endl << "Index du contact : ";
 				std::getline(std::cin, jj);
-				if (jj.length() == 1)
+				if (jj.length() == 1 && isdigit(jj[0]))
 					j = std::stoi(jj, 0, 10);
 				else
 					j = -2;
