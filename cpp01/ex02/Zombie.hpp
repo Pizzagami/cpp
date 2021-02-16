@@ -1,24 +1,23 @@
+#include <iostream>
+#include <string>
+#include <time.h>
+
 class Zombie{
 
 public:
 
-    std::string name;
-	std::string type;
-    std::string decomposition_state;
-
-    Zombie(std::string name) : name(name)
+    Zombie(std::string name, std::string type) : _name(name)
     {
-        std::cout  << this->name << "est devenu un zombie" << std::endl;
+        this->_type = type;
+        std::cout  << this->_name << " est devenu un "<< this->_type << std::endl;
     }
 
 	~Zombie()
     {
-         std::cout  << "Le zombie " << this->name << " a trouvé le repos eternelle" << std::endl;
+         std::cout  << "Le zombie " << this->_name << " a trouvé le repos eternelle" << std::endl;
     }
 
+private:
+	std::string _type;
+	std::string _name;
 };
-
-/*Runners
-Stalkers
-Clickers
-Bloaters*/

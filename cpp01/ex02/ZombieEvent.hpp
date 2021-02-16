@@ -4,8 +4,10 @@ class ZombieEvent{
 
 public:
 
-    void setZombieType(Zombie ibmoz);
-	Zombie *newZombie(std::string name);
+    void setZombieType();
+    void randomType();
+	Zombie      *newZombie(std::string name);
+    void        randomChump();
 
     ZombieEvent()
     {
@@ -17,5 +19,7 @@ public:
          std::cout  << "End of The event" << std::endl;
     }
 
-private:
+    private:
+
+        std::string _type;
 };
