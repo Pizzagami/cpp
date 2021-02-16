@@ -1,4 +1,9 @@
+cpp
+# Created by https://www.toptal.com/developers/gitignore/api/c,vscode,visualstudiocode
+# Edit at https://www.toptal.com/developers/gitignore?templates=c,vscode,visualstudiocode
+
 ### C ###
+.*.swp
 # Prerequisites
 *.d
 
@@ -62,6 +67,7 @@ dkms.conf
 # Ignore all local history of files
 .history
 .ionide
+.swp
 
 ### vscode ###
 !.vscode/settings.json
