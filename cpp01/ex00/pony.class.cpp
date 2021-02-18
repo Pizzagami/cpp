@@ -1,5 +1,3 @@
-#include <iostream>
-#include <string>
 #include "pony.class.hpp"
 
 void    ponyOnTheStack(std::string pony_stack)
@@ -71,18 +69,4 @@ void    ponyOnTheHeap(std::string pony_heap){
     std::getline(std::cin,heapy->weight);
 
     delete heapy;
-}
-
-int     main(void)
-{
-    std::string pony_stack;
-    std::string pony_heap;
-
-    std::cout << "Entrez le noms du premier poney : ";
-    std::cin >> pony_stack;
-    std::cout << "Entrez le noms du deuxieme poney : ";
-    std::cin >> pony_heap;
-    ponyOnTheStack(pony_stack);
-    ponyOnTheHeap(pony_heap);
-    return 0;
 }

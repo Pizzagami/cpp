@@ -11,8 +11,6 @@ int main(void)
 	ze.randomChump();
 	ze.randomChump();
 	ze.randomChump();
-	ze.randomChump();
-	ze.randomChump();
 	zh2 = ze.newZombie(std::string("zh2"));
 	delete zh2;
 	ze.randomChump();
