@@ -7,9 +7,8 @@ class Zombie{
 public:
 
     void    advert();
-    Zombie(std::string name, std::string type) : _name(name)
+    Zombie(std::string name, std::string type) : _name(name), _type(type)
     {
-        this->_type = type;
         advert();
     };
 
