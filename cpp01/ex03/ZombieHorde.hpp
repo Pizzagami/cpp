@@ -2,12 +2,12 @@
 
 class ZombieHorde{
 
-public:
-	
-	Zombie	new_rand_zombie(void);
-	void	announce(void);
+	public:
 
-	ZombieHorde(int n) : _nbz(n)
+		Zombie	new_rand_zombie(void);
+		void	announce(void);
+
+		ZombieHorde(int n) : _nbz(n)
 	{
 		this->_horde = new Zombie[n];
 		while (n)
@@ -17,15 +17,15 @@ public:
 		}
 	}
 
-	~ZombieHorde()
-	{
-		delete [] this->_horde;
-		std::cout << " La horde a ete annilee" << std::endl;
-	}
+		~ZombieHorde()
+		{
+			delete [] this->_horde;
+			std::cout << " La horde a ete annilee" << std::endl;
+		}
 
-private:
+	private:
 
-	const int _nbz;
-	Zombie	*_horde;
+		const int _nbz;
+		Zombie	*_horde;
 
 };
