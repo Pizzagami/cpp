@@ -1,22 +1,20 @@
 NAME = phonebook
 
-LIB = 
-
 SRCS =	./main.cpp  	\
 		./contact.class.cpp	\
 
-FLAG = 
 FSANITIZE = -fsanitize=address -g3
+
 CXXFLAGS = -Wall -Wextra -Werror
 
 CXX = clang++
 
 OBJS = $(SRCS:.cpp=.o)
 
-all: $(NAME)
+all: $(NAME)i
 
 $(NAME): $(OBJS)
-	$(CXX) -o $(NAME) $(CXXFLAGS) $(FLAG) $(OBJS)
+	$(CXX) -o $(NAME) $(CXXFLAGS) $(OBJS)
 
 clean:
 	${RM} $(OBJS)

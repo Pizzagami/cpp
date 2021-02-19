@@ -1,11 +1,9 @@
 NAME = megaphone
 
-LIB = 
-
 SRCS =	./megaphone.cpp
 
-FLAG = 
 FSANITIZE = -fsanitize=address -g3
+
 CXXFLAGS = -Wall -Wextra -Werror
 
 CXX = clang++
@@ -15,7 +13,7 @@ OBJS = $(SRCS:.cpp=.o)
 all: $(NAME)
 
 $(NAME): $(OBJS)
-	$(CXX) -o $(NAME) $(CXXFLAGS) $(FLAG) $(OBJS)
+	$(CXX) -o $(NAME) $(CXXFLAGS) $(OBJS)
 
 clean:
 	${RM} $(OBJS)
