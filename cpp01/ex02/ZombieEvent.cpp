@@ -1,8 +1,8 @@
 #include "ZombieEvent.hpp"
 
-void	ZombieEvent::randomChump(void)
+void    ZombieEvent::randomChump(void)
 {
-	const char *name[] = {"Aaron", "Ab", "Abba", "Abbe", "Abbey", "Abbie", "Abbot", "Abbott", "Abby", "Abdel", "Abdul", "Abe", "Abel", "Abelard", "Abeu", "Abey", "Abie", "Abner", "Abraham", "Abrahan", "Abram", "Abramo", "Abran", "Ad", "Adair", "Adam", "Adamo", "Adams", "Adan", "Addie", "Addison", "Addy", "Ade", "Adelbert", "Adham", "Adlai", "Adler", "Ado", "Adolf", "Adolph", "Adolphe", "Adolpho", "Adolphus", "Adrian", "Adriano", "Adrien", "Agosto", "Aguie", "Aguistin", "Aguste", "Agustin", "Aharon", "Ahmad", "Ahmed", "Ailbert", "Akim", "Aksel", "Al", "Alain", "Alair", "Alan", "Aland", "Alano", "Alanson", "Alard", "Alaric", "Alasdair", "Alastair", "Alasteir", "Alaster", "Alberik", "Albert", "Alberto", "Albie", "Albrecht", "Alden", "Aldin", "Aldis", "Aldo", "Aldon", "Aldous", "Aldric", "Aldrich", "Aldridge", "Aldus", "Aldwin", "Alec", "Alejandro", "Alejoa", "Aleksandr", "Alessandro", "Alex", "Alexander", "Alexandr", "Alexandre", "Alexandro", "Alexandros", "Alexei", "Alexio", "Alexis", "Alf", "Alfie", "Alfons", "Alfonse", "Alfonso", "Alford", "Alfred", "Alfredo", "Alfy", "Algernon", "Ali", "Alic", "Alick", "Alisander", "Alistair", "Alister", "Alix", "Allan", "Allard", "Allayne", "Allen", "Alley", "Alleyn", "Allie", "Allin", "Allister", "Allistir", "Allyn", "Aloin", "Alon", "Alonso", "Alonzo", "Aloysius", "Alphard", "Alphonse", "Alphonso", "Alric", "Aluin", "Aluino", "Alva", "Alvan", "Alvie", "Alvin", "Alvis", "Alvy", "Alwin", "Alwyn", "Alyosha", "Amble", "Ambros", "Ambrose", "Ambrosi", "Ambrosio", "Ambrosius", "Amby", "Amerigo", "Amery", "Amory", "Amos", "Anatol", "Anatole", "Anatollo", "Ancell", "Anders", "Anderson", "Andie", "Andonis", "Andras", "Andre", "Andrea", "Andreas", "Andrej", "Andres", "Andrew", "Andrey", "Andris", 
+	const std::string name[] = {"Aaron", "Ab", "Abba", "Abbe", "Abbey", "Abbie", "Abbot", "Abbott", "Abby", "Abdel", "Abdul", "Abe", "Abel", "Abelard", "Abeu", "Abey", "Abie", "Abner", "Abraham", "Abrahan", "Abram", "Abramo", "Abran", "Ad", "Adair", "Adam", "Adamo", "Adams", "Adan", "Addie", "Addison", "Addy", "Ade", "Adelbert", "Adham", "Adlai", "Adler", "Ado", "Adolf", "Adolph", "Adolphe", "Adolpho", "Adolphus", "Adrian", "Adriano", "Adrien", "Agosto", "Aguie", "Aguistin", "Aguste", "Agustin", "Aharon", "Ahmad", "Ahmed", "Ailbert", "Akim", "Aksel", "Al", "Alain", "Alair", "Alan", "Aland", "Alano", "Alanson", "Alard", "Alaric", "Alasdair", "Alastair", "Alasteir", "Alaster", "Alberik", "Albert", "Alberto", "Albie", "Albrecht", "Alden", "Aldin", "Aldis", "Aldo", "Aldon", "Aldous", "Aldric", "Aldrich", "Aldridge", "Aldus", "Aldwin", "Alec", "Alejandro", "Alejoa", "Aleksandr", "Alessandro", "Alex", "Alexander", "Alexandr", "Alexandre", "Alexandro", "Alexandros", "Alexei", "Alexio", "Alexis", "Alf", "Alfie", "Alfons", "Alfonse", "Alfonso", "Alford", "Alfred", "Alfredo", "Alfy", "Algernon", "Ali", "Alic", "Alick", "Alisander", "Alistair", "Alister", "Alix", "Allan", "Allard", "Allayne", "Allen", "Alley", "Alleyn", "Allie", "Allin", "Allister", "Allistir", "Allyn", "Aloin", "Alon", "Alonso", "Alonzo", "Aloysius", "Alphard", "Alphonse", "Alphonso", "Alric", "Aluin", "Aluino", "Alva", "Alvan", "Alvie", "Alvin", "Alvis", "Alvy", "Alwin", "Alwyn", "Alyosha", "Amble", "Ambros", "Ambrose", "Ambrosi", "Ambrosio", "Ambrosius", "Amby", "Amerigo", "Amery", "Amory", "Amos", "Anatol", "Anatole", "Anatollo", "Ancell", "Anders", "Anderson", "Andie", "Andonis", "Andras", "Andre", "Andrea", "Andreas", "Andrej", "Andres", "Andrew", "Andrey", "Andris", 
 "Andros", "Andrus", "Andy", "Ange", "Angel", "Angeli", "Angelico", "Angelo", "Angie", "Angus", "Ansel", "Ansell", "Anselm", "Anson", "Anthony", "Antin", "Antoine", "Anton", "Antone", "Antoni", "Antonin", "Antonino", 
 "Antonio", "Antonius", "Antons", "Antony", "Any", "Ara", "Araldo", "Arch", "Archaimbaud", "Archambault", "Archer", "Archibald", "Archibaldo", "Archibold", "Archie", "Archy", "Arel", "Ari", "Arie", "Ariel", "Arin", "Ario", "Aristotle", "Arlan", "Arlen", "Arley", "Arlin", "Arman", "Armand", "Armando", "Armin", "Armstrong", "Arnaldo", "Arne", "Arney", "Arni", "Arnie", "Arnold", "Arnoldo", "Arnuad", "Arny", "Aron", "Arri", "Arron", 
 "Art", "Artair", "Arte", "Artemas", "Artemis", "Artemus", "Arther", "Arthur", "Artie", "Artur", "Arturo", "Artus", "Arty", "Arv", "Arvie", "Arvin", "Arvy", "Asa", "Ase", "Ash", "Ashbey", "Ashby", "Asher", "Ashley", "Ashlin", "Ashton", "Aube", "Auberon", "Aubert", "Aubrey", "Augie", "August", "Augustin", "Augustine", "Augusto", "Augustus", "Augy", "Aurthur", "Austen", "Austin", "Ave", "Averell", "Averil", "Averill", "Avery", "Avictor", "Avigdor", "Avram", "Avrom", "Ax", "Axe", "Axel", "Aylmar", "Aylmer", "Aymer", "Bail", "Bailey", "Bailie", "Baillie", "Baily", "Baird", "Bald", "Balduin", "Baldwin", "Bale", "Ban", "Bancroft", "Bank", "Banky", "Bar", "Barbabas", "Barclay", "Bard", "Barde", "Barn", "Barnabas", "Barnabe", "Barnaby", "Barnard", "Barnebas", "Barnett", "Barney", "Barnie", "Barny", "Baron", "Barr", "Barret", "Barrett", "Barri", "Barrie", "Barris", "Barron", "Barry", "Bart", "Bartel", "Barth", "Barthel", "Bartholemy", "Bartholomeo", "Bartholomeus", "Bartholomew", "Bartie", "Bartlet", "Bartlett", "Bartolemo", "Bartolomeo", "Barton", "Bartram", "Barty", "Bary", "Baryram", "Base", "Basil", "Basile", "Basilio", "Basilius", "Bastian", "Bastien", "Bat", "Batholomew", "Baudoin", "Bax", "Baxie", "Baxter", "Baxy", "Bay", "Bayard", "Beale", "Bealle", "Bear", "Bearnard", "Beau", 
@@ -27,7 +27,7 @@ void	ZombieEvent::randomChump(void)
 	Zombie tmp = Zombie(std::string(name[(rand()) % 3896]), this->_type);
 }
 
-Zombie      *ZombieEvent::newZombie(std::string name)
+Zombie  *ZombieEvent::newZombie(std::string name)
 {
     setZombieType();
     return(new Zombie(name, this->_type));
@@ -35,11 +35,11 @@ Zombie      *ZombieEvent::newZombie(std::string name)
 
 void	ZombieEvent::randomType(void)
 {
-	const char *type[] = {"Runner", "Stalker", "Clicker", "Bloater"};
+	const std::string type[] = {"Runner", "Stalker", "Clicker", "Bloater"};
 	this->_type = type[(rand()) % 4];
 }
 
-void ZombieEvent::setZombieType()
+void    ZombieEvent::setZombieType()
 {
     int i = 0;
     std::string t;

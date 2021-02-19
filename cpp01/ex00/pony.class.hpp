@@ -1,3 +1,9 @@
+#include <iostream>
+#include <string>
+
+void    ponyOnTheHeap(std::string pony_heap);
+void    ponyOnTheStack(std::string pony_stack);
+
 class Pony{
 
 public:

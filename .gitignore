@@ -68,6 +68,7 @@ dkms.conf
 .history
 .ionide
 .swp
+.swo
 
 ### vscode ###
 !.vscode/settings.json

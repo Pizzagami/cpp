@@ -6,11 +6,11 @@ class Zombie{
 
 public:
 
-    Zombie(std::string name, std::string type) : _name(name)
+    void    advert();
+    Zombie(std::string name, std::string type) : _name(name), _type(type)
     {
-        this->_type = type;
-        std::cout  << this->_name << " est devenu un "<< this->_type << std::endl;
-    }
+        advert();
+    };
 
 	~Zombie()
     {
