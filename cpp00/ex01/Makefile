@@ -7,16 +7,16 @@ SRCS =	./main.cpp  	\
 
 FLAG = 
 FSANITIZE = -fsanitize=address -g3
-CFLAGS = -Wall -Wextra -Werror
+CXXFLAGS = -Wall -Wextra -Werror
 
-CC = clang++
+CXX = clang++
 
-OBJS = $(SRCS:.c=.o)
+OBJS = $(SRCS:.cpp=.o)
 
 all: $(NAME)
 
 $(NAME): $(OBJS)
-	$(CC) -o $(NAME) $(CFLAGS) $(FLAG) $(OBJS)
+	$(CXX) -o $(NAME) $(CXXFLAGS) $(FLAG) $(OBJS)
 
 clean:
 	${RM} $(OBJS)
