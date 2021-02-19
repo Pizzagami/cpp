@@ -11,7 +11,7 @@ CXX = clang++
 
 OBJS = $(SRCS:.cpp=.o)
 
-all: $(NAME)i
+all: $(NAME)
 
 $(NAME): $(OBJS)
 	$(CXX) -o $(NAME) $(CXXFLAGS) $(OBJS)
