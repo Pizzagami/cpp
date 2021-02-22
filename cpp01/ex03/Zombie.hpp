@@ -7,7 +7,7 @@ class Zombie{
 	public:
 
 		void    advert();
-		Zombie(std::string name = "john doe", std::string type = "runner") : _name(name), _type(type)
+		Zombie(std::string name = "john doe", std::string type = "runner") : _type(type), _name(name)
 		{
 			advert();
 		};
