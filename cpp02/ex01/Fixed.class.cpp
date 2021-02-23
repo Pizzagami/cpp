@@ -17,7 +17,23 @@ Fixed::Fixed(const Fixed &fixed)
 	this->setRawBits(fixed.getRawBits());
 }
 
-Fixed &Fixed::operator=(const Fixed &fixed)
+Fixed::Fixed(const int n) : _value(n) {
+}
+
+Fixed::Fixed(const float f) {
+	this->_value = (int)roundf(f);
+}
+
+float	Fixed::toFloat(void) const{
+	return (0);
+}
+
+int		Fixed::toInt(void) const {
+	
+	return (0);
+}
+
+Fixed	&Fixed::operator=(const Fixed &fixed)
 {
 	std::cout << "Assignation operator called" << std::endl;
 	this->setRawBits(fixed.getRawBits());
@@ -35,3 +51,7 @@ void	Fixed::setRawBits(int const raw)
 	this->_value = raw;
 }
 
+std::ostream & operator<<( std::ostream & o , Fixed const & rhs) {
+	o << rhs.toFloat();
+	return o;
+}
