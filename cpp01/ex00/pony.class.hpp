@@ -1,3 +1,6 @@
+#ifndef PONY_HPP
+# define PONY_HPP
+
 #include <iostream>
 #include <string>
 
@@ -30,3 +33,5 @@ private:
     std::string _weight;
 
 };
+
+#endif

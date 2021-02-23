@@ -1,3 +1,6 @@
+#ifndef ZOMBIEHORDE_HPP
+# define ZOMBIEHORDE_HPP
+
 #include "Zombie.hpp"
 
 class ZombieHorde{
@@ -29,3 +32,5 @@ class ZombieHorde{
 		Zombie	*_horde;
 
 };
+
+#endif

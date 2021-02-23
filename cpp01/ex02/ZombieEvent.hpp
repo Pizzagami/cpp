@@ -1,3 +1,6 @@
+#ifndef ZOMBIEEVENT_HPP
+# define ZOMBIEEVENT_HPP
+
 #include "Zombie.hpp"
 
 class ZombieEvent{
@@ -23,3 +26,5 @@ public:
 
         std::string _type;
 };
+
+#endif

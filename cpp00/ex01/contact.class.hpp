@@ -1,3 +1,6 @@
+#ifndef CONTACT_HPP
+# define CONTACT_HPP
+
 class Contact {
 
 public:
@@ -20,3 +23,5 @@ private:
 	std::string _underwear_color;
 	std::string _darkest_secret;
 };
+
+#endif

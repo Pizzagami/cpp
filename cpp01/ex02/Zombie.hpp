@@ -1,3 +1,6 @@
+#ifndef ZOMBIE_HPP
+# define ZOMBIE_HPP
+
 #include <iostream>
 #include <string>
 #include <time.h>
@@ -21,3 +24,5 @@ private:
 	std::string _type;
 	std::string _name;
 };
+
+#endif
