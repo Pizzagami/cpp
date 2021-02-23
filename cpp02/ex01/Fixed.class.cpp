@@ -17,20 +17,21 @@ Fixed::Fixed(const Fixed &fixed)
 	this->setRawBits(fixed.getRawBits());
 }
 
-Fixed::Fixed(const int n) : _value(n) {
+Fixed::Fixed(const int n) {
+	this->_value = n << this->_n_bit;
 }
 
 Fixed::Fixed(const float f) {
-	this->_value = (int)roundf(f);
+	this->_value = roundf(f * ( 1 << _n_bit));
 }
 
 float	Fixed::toFloat(void) const{
-	return (0);
+	return (((float)(this->_value) /  ( 1 << this->_n_bit) ) );
 }
 
 int		Fixed::toInt(void) const {
 	
-	return (0);
+	return ((int)this->_value >> this->_n_bit);
 }
 
 Fixed	&Fixed::operator=(const Fixed &fixed)
