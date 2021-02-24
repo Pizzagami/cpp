@@ -20,7 +20,7 @@ FragTrap::FragTrap(const FragTrap &fragtrap){
 	this->_ranged_attack_damage = fragtrap._ranged_attack_damage;
 	this->_armor_damage_reduction = fragtrap._armor_damage_reduction;
 
-		std::cout <<"Allow me to introduce myself -- I am FR4P-TP shoebox bot, but my friends call me "<< this->_name << "! Or they would if any of them were still alive. Or had existed in the first place!" << std::endl;
+		std::cout <<"Allow me to introduce myself -- I am FR4G-TP shoebox bot, but my friends call me "<< this->_name << "! Or they would if any of them were still alive. Or had existed in the first place!" << std::endl;
 }
 
 FragTrap &FragTrap::operator=(const FragTrap &fragtrap){
@@ -35,7 +35,7 @@ FragTrap &FragTrap::operator=(const FragTrap &fragtrap){
 	this->_ranged_attack_damage = fragtrap._ranged_attack_damage;
 	this->_armor_damage_reduction = fragtrap._armor_damage_reduction;
 
-	std::cout <<"Allow me to introduce myself -- I am FR4P-TP shoebox bot, but my friends call me "<< this->_name << "! Or they would if any of them were still alive. Or had existed in the first place!" << std::endl;
+	std::cout <<"Allow me to introduce myself -- I am FR4G-TP shoebox bot, but my friends call me "<< this->_name << "! Or they would if any of them were still alive. Or had existed in the first place!" << std::endl;
 	return (*this);
 }
 

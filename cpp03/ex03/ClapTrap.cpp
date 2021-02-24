@@ -66,3 +66,8 @@ void ClapTrap::beRepaired(int amount)
 	else
 		this->_hit_points = this->_max_hit_points;
 }
+
+std::string ClapTrap::getname()
+{
+	return (std::string(this->_name));
+}
