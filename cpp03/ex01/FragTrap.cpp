@@ -61,7 +61,7 @@ void FragTrap::takeDamage(int amount){
 	}
 	else
 	{
-		std::cout << this->_name << ": I'M DEAD I'M DEAD OH MY GOD I'M DEAD!" << std::endl;
+		std::cout << this->_name << ": I'M DEAD I'M DEAD OHMYGOD I'M DEAD!" << std::endl;
 		this->_hit_points = 0;
 	}
 }
