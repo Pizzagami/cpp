@@ -1,6 +1,16 @@
 #include "FragTrap.hpp"
 
-FragTrap::FragTrap(const std::string &name) : _name(name),  _hit_points(100), _max_hit_points(100), _energy_points(100), _max_energy_point(100), _level(1), _melee_attack_damage(30), _ranged_attack_damage(20), _armor_damage_reduction(5) {
+FragTrap::FragTrap(const std::string &name) : ClapTrap(name){
+
+	this->_hit_points = 100;
+	this->_max_hit_points = 100;
+	this->_energy_points = 100;
+	this->_max_energy_point = 100;
+	this->_level = 1;
+	this->_name = name;
+	this->_melee_attack_damage = 30;
+	this->_ranged_attack_damage = 20;
+	this->_armor_damage_reduction = 5;
 	std::cout <<"Allow me to introduce myself -- I am FR4G-TP shoebox bot, but my friends call me "<< name << "! Or they would if any of them were still alive. Or had existed in the first place!" << std::endl;
 }
 
@@ -8,7 +18,7 @@ FragTrap::~FragTrap(){
 	std::cout << "STAIRS?! NOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO!" << std::endl;
 }
 
-FragTrap::FragTrap(const FragTrap &fragtrap){
+FragTrap::FragTrap(const FragTrap &fragtrap) : ClapTrap(fragtrap) {
 	
 	this->_name = fragtrap._name;
 	this->_hit_points = fragtrap._hit_points;
@@ -45,34 +55,6 @@ void FragTrap::rangedAttack(const std::string &target){
 
 void FragTrap::meleeAttack(const std::string &target){
 		std::cout << "FR4G-TP " << this->_name << " attack  " << target << " at melee, causing " << this->_ranged_attack_damage << " points of damage !" << std::endl;
-}
-
-void FragTrap::takeDamage(int amount){
-
-	if (amount < this->_armor_damage_reduction)
-	{
-		std::cout << "AHAHA Can't touch this!" << std::endl;
-		return ;
-	}
-	if ((amount - this->_armor_damage_reduction) < this->_hit_points)
-	{
-		std::cout << this->_name << ": MINION , PROTECT ME !!" << std::endl;
-		this->_hit_points = this->_hit_points - (amount - this->_armor_damage_reduction);
-	}
-	else
-	{
-		std::cout << this->_name << ": I'M DEAD I'M DEAD OHMYGOD I'M DEAD!" << std::endl;
-		this->_hit_points = 0;
-	}
-}
-
-void FragTrap::beRepaired(int amount)
-{
-	std::cout << this->_name << ": Health! Eww, what flavor is red?" << std::endl;
-	if (this->_hit_points + amount <= this->_max_hit_points)
-		this->_hit_points = this->_hit_points + amount;
-	else
-		this->_hit_points = this->_max_hit_points;
 }
 
 void FragTrap::vaulthunter_dot_exe(const std::string &target)
