@@ -1,6 +1,6 @@
 #include "ScavTrap.hpp"
 
-ScavTrap::ScavTrap(const std::string &name){
+ScavTrap::ScavTrap(const std::string &name): ClapTrap(name){
 
 	this->_hit_points = 100;
 	this->_max_hit_points = 100;
@@ -18,7 +18,7 @@ ScavTrap::~ScavTrap(){
 	std::cout << "A LOCK?! NOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO!" << std::endl;
 }
 
-ScavTrap::ScavTrap(const ScavTrap &scavtrap){
+ScavTrap::ScavTrap(const ScavTrap &scavtrap) : ClapTrap(scavtrap) {
 
 	this->_name = scavtrap._name;
 	this->_hit_points = scavtrap._hit_points;

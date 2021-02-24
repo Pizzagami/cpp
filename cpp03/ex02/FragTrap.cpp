@@ -1,6 +1,6 @@
 #include "FragTrap.hpp"
 
-FragTrap::FragTrap(const std::string &name){
+FragTrap::FragTrap(const std::string &name) : ClapTrap(name){
 
 	this->_hit_points = 100;
 	this->_max_hit_points = 100;
@@ -18,7 +18,7 @@ FragTrap::~FragTrap(){
 	std::cout << "STAIRS?! NOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO!" << std::endl;
 }
 
-FragTrap::FragTrap(const FragTrap &fragtrap){
+FragTrap::FragTrap(const FragTrap &fragtrap) : ClapTrap(fragtrap) {
 	
 	this->_name = fragtrap._name;
 	this->_hit_points = fragtrap._hit_points;
