@@ -10,7 +10,7 @@ class SuperTrap : public FragTrap, public NinjaTrap
 
 		int rangedAttack(const std::string &target);
 		int meleeAttack(const std::string &target);
-
+		
 		SuperTrap(const std::string & name);
 		SuperTrap(const SuperTrap & src);
 		~SuperTrap();
