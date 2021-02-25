@@ -1,6 +1,6 @@
 #include "SuperTrap.hpp"
 
-SuperTrap::SuperTrap(const std::string & name) : NinjaTrap(name), Fragtrap(name){
+SuperTrap::SuperTrap(const std::string & name) : ClapTrap(name), FragTrap(name), NinjaTrap(name){
 
 	this->_energy_points = 120;
 	this->_max_energy_point = 120;
@@ -8,8 +8,8 @@ SuperTrap::SuperTrap(const std::string & name) : NinjaTrap(name), Fragtrap(name)
 	std::cout << " I'M THE BEST, I'M A GOD , I'M "<< this->_name << std::endl;
 }
 
-SuperTrap::SuperTrap(const SuperTrap &supertrap) : NinjaTrap(supertrap._name), FragTrap(supertrap._name)
-{
+SuperTrap::SuperTrap(const SuperTrap &supertrap) : ClapTrap(supertrap._name), FragTrap(supertrap._name), NinjaTrap(supertrap._name){
+
 	this->_hit_points = supertrap._hit_points;
 	this->_max_hit_points = supertrap._max_hit_points;
 	this->_energy_points = supertrap._energy_points;
@@ -22,8 +22,8 @@ SuperTrap::SuperTrap(const SuperTrap &supertrap) : NinjaTrap(supertrap._name), F
 	std::cout << "MY NAME IS " << this->_name << " AND I AM THE BEST OF ALL" << std::endl;
 }
 
-SuperTrap &SuperTrap::operator=(const SuperTrap &supertrap)
-{
+SuperTrap &SuperTrap::operator=(const SuperTrap &supertrap){
+
 	this->_hit_points = supertrap._hit_points;
 	this->_max_hit_points = supertrap._max_hit_points;
 	this->_energy_points = supertrap._energy_points;
@@ -36,17 +36,17 @@ SuperTrap &SuperTrap::operator=(const SuperTrap &supertrap)
     return (*this);
 }
 
-SuperTrap::~SuperTrap()
-{
+SuperTrap::~SuperTrap(){
+
 	std::cout << "NIETZSCHE WAS RIGHT, I'M DIYING !" << std::endl;
 }
 
-int SuperTrap::rangedAttack(const std::string &target)
-{
+int SuperTrap::rangedAttack(const std::string &target){
+
     return (FragTrap::rangedAttack(target));
 }
 
-int SuperTrap::meleeAttack(const std::string &target)
-{
+int SuperTrap::meleeAttack(const std::string &target){
+
     return (NinjaTrap::meleeAttack(target));
 }

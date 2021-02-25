@@ -49,12 +49,14 @@ FragTrap &FragTrap::operator=(const FragTrap &fragtrap){
 	return (*this);
 }
 
-void FragTrap::rangedAttack(const std::string &target){
+int FragTrap::rangedAttack(const std::string &target){
 	std::cout << "FR4G-TP " << this->_name << " attack  " << target << " at range, causing " << this->_ranged_attack_damage << " points of damage !" << std::endl;
+	return (this->_ranged_attack_damage);
 }
 
-void FragTrap::meleeAttack(const std::string &target){
+int FragTrap::meleeAttack(const std::string &target){
 		std::cout << "FR4G-TP " << this->_name << " attack  " << target << " at melee, causing " << this->_ranged_attack_damage << " points of damage !" << std::endl;
+	return (this->_melee_attack_damage);
 }
 
 void FragTrap::vaulthunter_dot_exe(const std::string &target)

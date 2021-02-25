@@ -4,12 +4,12 @@
 # include "FragTrap.hpp"
 # include "ScavTrap.hpp"
 
-class NinjaTrap : public ClapTrap
+class NinjaTrap : public virtual ClapTrap
 {
 	public:
 
 		int rangedAttack(const std::string &target);
-		int meleeAttack(const std::string &target);
+		int  meleeAttack(const std::string &target);
 		void ninjaShoebox(NinjaTrap &ninjatrap);
 		void ninjaShoebox(ScavTrap &scavtrap);
 		void ninjaShoebox(FragTrap &fragtrap);
