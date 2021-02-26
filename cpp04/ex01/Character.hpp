@@ -29,6 +29,6 @@ class Character
 		AWeapon		*_weapon;
 };
 
-std::ostream		& operator<<(std::ostream &output, const Character &character);
+std::ostream		& operator<<(std::ostream &o , const Character &character);
 
 #endif

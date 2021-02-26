@@ -9,7 +9,7 @@ class Enemy
 
 		Enemy();
 		Enemy(int hp, std::string const &type);
-		Enemy(const Enemy &ref);
+		Enemy(const Enemy & src);
 		virtual ~Enemy();
 		
 		Enemy			&operator=(const Enemy & rhs);
