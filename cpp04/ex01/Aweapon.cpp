@@ -1,4 +1,4 @@
-#include "Aweapon.hpp"
+#include "AWeapon.hpp"
 
 AWeapon::AWeapon(): _name("????"), _apcost(0), _damage(0) {
 }

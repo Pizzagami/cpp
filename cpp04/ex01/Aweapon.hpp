@@ -18,11 +18,11 @@ class AWeapon
 	int					getDamage() const;
 	virtual void		attack() const = 0;
 	
-	Aweapon();
-	Aweapon(const Aweapon & src);
+	AWeapon();
+	AWeapon(const AWeapon & src);
 	AWeapon(const std::string &name, int apcost, int damage);
 	virtual ~AWeapon();
-	Aweapon	& operator=(const Aweapon &aweapon);
+	AWeapon	& operator=(const AWeapon &aweapon);
 
 };
 

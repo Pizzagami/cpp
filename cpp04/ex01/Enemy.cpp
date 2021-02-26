@@ -30,3 +30,9 @@ void			Enemy::takeDamage(int dmg) {
 	_hp -= dmg;
 	_hp = (_hp < 0) ?  0 : _hp;
 }
+
+std::ostream & operator<<(std::ostream &o, const Enemy &enemy)
+{
+		o << enemy.getType() << " has " << enemy.getHP() << " HP !" << std::endl;
+	return o;
+}

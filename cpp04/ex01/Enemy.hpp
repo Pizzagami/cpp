@@ -22,4 +22,6 @@ class Enemy
 		std::string		_type;
 };
 
+std::ostream		& operator<<(std::ostream &o , const Enemy &enemy);
+
 #endif
