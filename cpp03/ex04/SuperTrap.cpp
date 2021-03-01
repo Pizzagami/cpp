@@ -40,13 +40,3 @@ SuperTrap::~SuperTrap(){
 
 	std::cout << "NIETZSCHE WAS RIGHT, I'M DIYING !" << std::endl;
 }
-
-int SuperTrap::rangedAttack(const std::string &target){
-
-    return (FragTrap::rangedAttack(target));
-}
-
-int SuperTrap::meleeAttack(const std::string &target){
-
-    return (NinjaTrap::meleeAttack(target));
-}

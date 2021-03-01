@@ -33,6 +33,7 @@ int main(void)
 	yamato.ninjaShoebox(cl4ptrap);
 	yamato.ninjaShoebox(sakurabot);
 	butt_stallion.meleeAttack("Roland");
+	butt_stallion.rangedAttack("Roland");
 	butt_stallion.vaulthunter_dot_exe("Lilith");
 	butt_stallion.ninjaShoebox(sakurabot);
 }

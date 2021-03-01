@@ -8,8 +8,8 @@ class SuperTrap : public NinjaTrap, public FragTrap
 {
 	public:
 
-		virtual int rangedAttack(const std::string &target);
-		virtual int meleeAttack(const std::string &target);
+		using NinjaTrap::meleeAttack;
+		using FragTrap::rangedAttack;
 		
 		SuperTrap(const std::string & name);
 		SuperTrap(const SuperTrap & src);
