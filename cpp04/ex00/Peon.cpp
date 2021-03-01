@@ -1,9 +1,5 @@
 #include "Peon.hpp"
 
-Peon::Peon(): Victim("NoName")
-{
-	std::cout << "\e[94mZog zog.\e[0m" << std::endl;
-}
 
 Peon::~Peon(){
 

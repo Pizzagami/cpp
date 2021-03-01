@@ -4,12 +4,12 @@
 #include "FragTrap.hpp"
 #include "NinjaTrap.hpp"
 
-class SuperTrap : public FragTrap, public NinjaTrap
+class SuperTrap : public NinjaTrap, public FragTrap
 {
 	public:
 
-		int rangedAttack(const std::string &target);
-		int meleeAttack(const std::string &target);
+		virtual int rangedAttack(const std::string &target);
+		virtual int meleeAttack(const std::string &target);
 		
 		SuperTrap(const std::string & name);
 		SuperTrap(const SuperTrap & src);

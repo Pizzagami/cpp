@@ -20,7 +20,6 @@ class ScavTrap : public ClapTrap
 		
 };
 
-std::ostream & operator<<(std::ostream & o , ScavTrap const & i);
 
 #endif
 

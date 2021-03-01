@@ -31,7 +31,5 @@ class FragTrap
 		int			_armor_damage_reduction;
 };
 
-std::ostream & operator<<(std::ostream & o , FragTrap const & i);
-
 #endif
 

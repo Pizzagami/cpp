@@ -1,8 +1,4 @@
 #include "Pizza.hpp"
-
-Pizza::Pizza(): Victim("NoName") {
-
-	std::cout << "\e[94mPIIIZZZZZAAAAAA!!!!\e[0m" << std::endl;
 }
 
 Pizza::Pizza(std::string const name): Victim(name) {

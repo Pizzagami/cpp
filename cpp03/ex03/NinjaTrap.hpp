@@ -24,7 +24,5 @@ class NinjaTrap : public ClapTrap
 
 };
 
-std::ostream & operator<<(std::ostream & o , NinjaTrap const & i);
-
 #endif
 
