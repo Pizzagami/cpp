@@ -10,13 +10,11 @@ class Zombie{
 public:
 
     void    advert();
-    Zombie(std::string name, std::string type) : _name(name), _type(type)
-    {
+    Zombie(std::string name, std::string type) : _name(name), _type(type) {
         advert();
     };
 
-	~Zombie()
-    {
+	~Zombie() {
          std::cout  << "Le zombie " << this->_name << " a trouvé le repos eternel" << std::endl;
     }
 

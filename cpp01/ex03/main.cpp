@@ -10,6 +10,6 @@ int     main(void)
 	horde1->announce();
 	horde2.announce();
 	delete horde1;
-	std::cout << " heureusement il reste toujours la 2 eme horde !" << std::endl; 
+	std::cout << " heureusement il reste toujours la 2 eme horde !" << std::endl;
 }
 

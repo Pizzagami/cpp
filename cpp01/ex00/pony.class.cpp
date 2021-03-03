@@ -104,7 +104,7 @@ void    ponyOnTheHeap(std::string pony_heap){
 	std::cout << "Donc si j ai bien noté, " << heapy->get_name()
 		<< " est né le " << heapy->get_bday() << std::endl
 		<< "Sa robe est " << heapy->get_color()
-		<< "et son repas preferé est le " << heapy->get_favorite_meal() << std::endl
+		<< " et son repas preferé est le " << heapy->get_favorite_meal() << std::endl
 		<< " il fait " << heapy->get_size()
 		<< " et pèse " << heapy->get_weight() << std::endl;
 

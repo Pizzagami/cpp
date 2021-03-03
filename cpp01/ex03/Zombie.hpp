@@ -10,13 +10,18 @@ class Zombie{
 	public:
 
 		void    advert();
-		Zombie(std::string name = "john doe", std::string type = "runner") : _type(type), _name(name)
-		{
+		Zombie(std::string name = "john doe", std::string type = "runner") : _type(type), _name(name) {
 		};
 
-		~Zombie()
-		{
+		~Zombie() {
+			std::cout <<  this->_name << " died !" << std::endl;
 		};
+		void	set_name(std::string name) {
+			_name = name;
+		}
+		void	set_type(std::string type) {
+			_type = type;
+		}
 
 	private:
 		std::string _type;
