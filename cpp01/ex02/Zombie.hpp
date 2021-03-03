@@ -17,7 +17,7 @@ public:
 
 	~Zombie()
     {
-         std::cout  << "Le zombie " << this->_name << " a trouvé le repos eternelle" << std::endl;
+         std::cout  << "Le zombie " << this->_name << " a trouvé le repos eternel" << std::endl;
     }
 
 private:

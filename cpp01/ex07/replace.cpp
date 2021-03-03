@@ -16,6 +16,7 @@ std::string str_replace_all(std::string line, std::string str1, std::string str2
 
 int			main(int argc, char **argv)
 {
+	std::string		str  = argv[1];
 	std::string		str1 = argv[2];
 	std::string		str2 = argv[3];
 	std::ifstream	ifile(argv[1]);
@@ -32,7 +33,7 @@ int			main(int argc, char **argv)
 	}
 	else
 	{
-		std::ofstream ofile("FILENAME.replace");
+		std::ofstream ofile(str + ".replace");
 		while(std::getline(ifile, line))
 			ofile << str_replace_all(line, str1, str2) << "\n";
 		ifile.close();

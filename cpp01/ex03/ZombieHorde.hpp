@@ -23,7 +23,7 @@ class ZombieHorde{
 		~ZombieHorde()
 		{
 			delete [] this->_horde;
-			std::cout << " La horde a ete annilee" << std::endl;
+			std::cout << " La horde a ete annihilee" << std::endl;
 		}
 
 	private:
