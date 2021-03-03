@@ -8,8 +8,8 @@ DeathAngel::~DeathAngel() {
      std::cout << "Without the Death, there can be no sacrifice" << std::endl;
 }
 
-ISpaceMarine    DeathAngel::*clone() {
-    return (new DeathAngel());
+ISpaceMarine    *DeathAngel::clone() const {
+    return (new DeathAngel(*this));
 }
 
 void DeathAngel::battleCry() const {

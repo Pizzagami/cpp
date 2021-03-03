@@ -7,12 +7,15 @@
 class DeathAngel : public ISpaceMarine
 {
 	public:
-                DeathAngel();
-                virtual ~DeathAngel();
-                ISpaceMarine *clone();
-                void battleCry() const;
-                void rangedAttack() const;
-                void meleeAttack() const;
+            virtual ISpaceMarine *clone() const;
+            void    battleCry() const;
+            void    rangedAttack() const;
+            void    meleeAttack() const;
+
+            DeathAngel();
+            DeathAngel(const DeathAngel & rhs);
+            virtual ~DeathAngel();
+
 };
 
 #endif

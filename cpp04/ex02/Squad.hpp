@@ -1,33 +1,25 @@
-#ifndef SQUAD_HPP
-# define SQUAD_HPP
+#ifndef SQUAD
+# define SQUAD
 
 # include <iostream>
-# include "ISquad.hpp" 
+# include "ISquad.hpp"
 
-typedef struct	s_soldier
-{
-	ISpaceMarine		*_marine;
-	struct	s_soldier	*next;
-}				t_soldier;
-
-class Squad : public ISquad
+class Squad: public ISquad
 {
 	public:
+		Squad();
+		Squad(const Squad &rhs);
+		virtual ~Squad();
 
-        int getCount() const;
-        ISpaceMarine* getUnit(int) const;
-        int push(ISpaceMarine*);
-
-        Squad(void);
-        virtual ~Squad(void);
-        Squad(const Squad &squad);
-        Squad(const Squad *squad);
-        Squad &operator=(const Squad &squad);
+		Squad			&operator=(const Squad & rhs);
+		int				getCount() const;
+		ISpaceMarine	*getUnit(int unit) const;
+		 int			push(ISpaceMarine *unit);
 
 	private:
-
-        t_soldier	*_soldier;
-        int			_count;
+	
+		int				_count;
+		ISpaceMarine	**_unit;
 };
 
 #endif

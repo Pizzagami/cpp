@@ -21,8 +21,9 @@ public:
     }
 
 private:
-	std::string _type;
+
 	std::string _name;
+	std::string _type;
 };
 
 #endif
