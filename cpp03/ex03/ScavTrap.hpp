@@ -10,8 +10,9 @@ class ScavTrap : public ClapTrap
 		void rangedAttack(const std::string &target);
 		void meleeAttack(const std::string &target);
 		void challengeNewcomer(const std::string &target);
+		
 		ScavTrap(const std::string &  name);
-		~ScavTrap();
+		virtual ~ScavTrap();
 		ScavTrap(const ScavTrap &scavtrap);
 		ScavTrap &operator=(const ScavTrap &scavtrap);
 

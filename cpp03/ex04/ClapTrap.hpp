@@ -12,7 +12,7 @@ class ClapTrap
 		std::string getname();
 		ClapTrap(const std::string & name);
 		ClapTrap(const ClapTrap & src);
-		~ClapTrap();
+		virtual ~ClapTrap();
 
 		ClapTrap &	operator=(const ClapTrap & rhs);
 

@@ -13,7 +13,7 @@ class FragTrap
 		void beRepaired(int amount);
 		void vaulthunter_dot_exe(const std::string &target);
 		FragTrap(const std::string &  name);
-		~FragTrap();
+		virtual ~FragTrap();
 		FragTrap(const FragTrap &fragTrap);
 		FragTrap &operator=(const FragTrap &fragtrap);
 

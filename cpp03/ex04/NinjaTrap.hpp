@@ -16,7 +16,7 @@ class NinjaTrap : public virtual ClapTrap
 		void ninjaShoebox(ClapTrap &claptrap);
 
 		NinjaTrap(const std::string &  name);
-		~NinjaTrap();
+		virtual ~NinjaTrap();
 		NinjaTrap(const NinjaTrap &ninjaTrap);
 		NinjaTrap &operator=(const NinjaTrap &ninjatrap);
 

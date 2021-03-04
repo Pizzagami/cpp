@@ -12,8 +12,9 @@ class ScavTrap
 		void takeDamage(int amount);
 		void beRepaired(int amount);
 		void challengeNewcomer(const std::string &target);
+		
 		ScavTrap(const std::string &  name);
-		~ScavTrap();
+		virtual ~ScavTrap();
 		ScavTrap(const ScavTrap &scavtrap);
 		ScavTrap &operator=(const ScavTrap &scavtrap);
 
