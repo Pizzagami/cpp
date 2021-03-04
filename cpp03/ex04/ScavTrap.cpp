@@ -70,4 +70,3 @@ void ScavTrap::challengeNewcomer(const std::string &target)
 	};
 	std::cout << this->_name << " challenge  " << target << " to" << attacks[((std::rand()) % 6 )] << std::endl;
 }
-

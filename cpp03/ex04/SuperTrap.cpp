@@ -38,5 +38,5 @@ SuperTrap &SuperTrap::operator=(const SuperTrap &supertrap){
 
 SuperTrap::~SuperTrap(){
 
-	std::cout << "NIETZSCHE WAS RIGHT, I'M DIYING !" << std::endl;
+	std::cout << "NIETZSCHE WAS RIGHT, I'M DIYING, NNNNNOOOOOOOOOOO !" << std::endl;
 }

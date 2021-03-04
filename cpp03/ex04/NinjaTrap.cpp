@@ -15,7 +15,7 @@ NinjaTrap::NinjaTrap(const std::string &name) : ClapTrap(name){
 }
 
 NinjaTrap::~NinjaTrap(){
-	std::cout << "STAIRS?! NOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO!" << std::endl;
+	std::cout << "SAMOURAI ?! NOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO!" << std::endl;
 }
 
 NinjaTrap::NinjaTrap(const NinjaTrap &ninjatrap) : ClapTrap(ninjatrap) {
