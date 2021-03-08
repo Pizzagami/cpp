@@ -1,5 +1,4 @@
 #include "Pizza.hpp"
-}
 
 Pizza::Pizza(std::string const name): Victim(name) {
 

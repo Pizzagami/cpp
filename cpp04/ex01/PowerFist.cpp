@@ -10,10 +10,8 @@ PowerFist::PowerFist(const PowerFist & src) : AWeapon(src.getName(), src.getAPCo
 }
 
 PowerFist &PowerFist::operator=(const PowerFist &src) {
-	this->_name = src.getName();
-	this->_apcost = src.getAPCost();
-	this->_damage = src.getDamage();
-	return (*this);
+	AWeapon::operator=(src);
+	return *this;
 }
 
 void PowerFist::attack() const {

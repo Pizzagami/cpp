@@ -13,10 +13,8 @@ PlasmaRifle::PlasmaRifle(const PlasmaRifle & src) : AWeapon(src.getName(), src.g
 }
 
 PlasmaRifle &PlasmaRifle::operator=(const PlasmaRifle &src) {
-	this->_name = src.getName();
-	this->_apcost = src.getAPCost();
-	this->_damage = src.getDamage();
-	return (*this);
+	AWeapon::operator=(src);	
+	return *this;
 }
 
 void PlasmaRifle::attack() const {

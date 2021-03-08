@@ -17,7 +17,7 @@ class Enemy
 		std::string		getType() const;
 		virtual void	takeDamage(int dmg);
 
-	protected:
+	private:
 		int				_hp;
 		std::string		_type;
 };
