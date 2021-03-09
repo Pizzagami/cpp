@@ -3,13 +3,17 @@
 
 class MateriaSource
 {
-	public:
-		MateriaSource(void);
-		MateriaSource(const MateriaSource & src);
-		virtual	~MateriaSource();
+		public:
+		MateriaSource();
+		MateriaSource(const MateriaSource &copy);
+		virtual ~MateriaSource();
 
-		MateriaSource &	operator=(const MateriaSource & rhs);
-	private:
+		MateriaSource	&operator=(const MateriaSource & rhs);
+
+		virtual void		learnMateria(AMateria *m);
+		virtual AMateria	*createMateria(std::string const &type);
+		
+		private:
 };
 
 #endif
