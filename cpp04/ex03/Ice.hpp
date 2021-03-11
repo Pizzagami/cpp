@@ -8,15 +8,13 @@ class Ice : public AMateria
 {
 	public:
 
-		Ice(void);
+		Ice();
 		Ice(const Ice & src);
 		virtual	~Ice();
 		Ice &	operator=(const Ice & rhs);
 
-		AMateria* clone() const;
+		Ice* clone() const;
 		void use(ICharacter& target);
-
-	private:
 };
 
 #endif

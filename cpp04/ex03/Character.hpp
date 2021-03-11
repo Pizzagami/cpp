@@ -4,7 +4,7 @@
 #include "ICharacter.hpp"
 #include "AMateria.hpp"
 
-class Character 
+class Character : public ICharacter 
 {
 	public:
 
@@ -13,7 +13,7 @@ class Character
 		Character(const Character & src);
 		virtual	~Character();
 
-		Character &	operator=(const Character & rhs);
+		Character & operator=(const Character & rhs);
 
 		std::string const & getName() const;
 		void equip(AMateria* m);
