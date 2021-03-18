@@ -1,7 +1,11 @@
-NAME = bureaucratie
+NAME = Bureaucratie
 
-SRCS =	./Bureaucrat.cpp	\
-	./Form.cpp		\
+SRCS =	./Bureaucrat.cpp		\
+	./AForm.cpp			\
+	./PresidentialPardonForm.cpp	\
+	./RobotomyRequestForm.cpp	\
+	./ShrubberyCreationForm.cpp	\
+	./Intern.cpp			\
 	./main.cpp
 
 FSANITIZE = -fsanitize=address -g3

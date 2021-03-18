@@ -20,7 +20,7 @@ void PresidentialPardonForm::subExecute(Bureaucrat const & executor) const
 
 PresidentialPardonForm	&	PresidentialPardonForm::operator=(const PresidentialPardonForm & rhs)
 {
-	(void)rhs;
+	AForm::operator=(rhs);
 	return (*(this));
 }
 

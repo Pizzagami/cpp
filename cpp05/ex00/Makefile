@@ -1,4 +1,4 @@
-NAME = bureaucratie
+NAME = Bureaucratie
 
 SRCS =	./Bureaucrat.cpp	\
 	./main.cpp

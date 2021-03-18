@@ -67,5 +67,9 @@ int	main(void)
 	julie.executeForm(*B742);
 	julie.signForm(*C456);
 	julie.executeForm(*C456);
+	delete A150;
+	delete A250;
+	delete B742;
+	delete C456;
 	return (0);
 }
