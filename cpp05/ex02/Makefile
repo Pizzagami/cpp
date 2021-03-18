@@ -1,14 +1,11 @@
-NAME = Kaneki
+NAME = bureaucratie
 
-SRCS =	./AWeapon.cpp		\
-	./PlasmaRifle.cpp	\
-	./PowerFist.cpp		\
-	./Enemy.cpp		\
-	./SuperMutant.cpp	\
-	./RadScorpion.cpp	\
-	./Character.cpp		\
+SRCS =	./Bureaucrat.cpp		\
+	./AForm.cpp			\
+	./PresidentialPardonForm.cpp	\
+	./RobotomyRequestForm.cpp	\
+	./ShrubberyCreationForm.cpp	\
 	./main.cpp
-
 
 FSANITIZE = -fsanitize=address -g3
 

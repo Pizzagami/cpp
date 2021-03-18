@@ -1,29 +1,25 @@
-NAME = SorcerersAndStuff
+NAME = Malfoy
 
-LIB = 
+SRCS =	./Sorcerer.cpp		\
+	./Victim.cpp		\
+	./Peon.cpp		\
+	./Pizza.cpp		\
+	./main.cpp
 
-SRCS =	./Sorcerer.cpp	\
-		./Victim.cpp	\
-		./Peon.cpp		\
-		./Pizza.cpp		\
-		./main.cpp
 
-FLAG = 
 FSANITIZE = -fsanitize=address -g3
-CFLAGS = -Wall -Wextra -Werror
 
-CC = clang++
+CXXFLAGS = -Wall -Wextra -Werror
+
+CXX = clang++
 
 OBJS = $(SRCS:.cpp=.o)
 
 all: $(NAME)
 
 $(NAME): $(OBJS)
-	$(CC) -o $(NAME) $(CFLAGS) $(FLAG) $(OBJS)
+	$(CXX) -o $(NAME) $(CXXFLAGS) $(OBJS)
 
-lib:
-	make -C ./includes/libft re
-	make -C ./includes/libft clean
 clean:
 	${RM} $(OBJS)
 
