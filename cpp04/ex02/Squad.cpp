@@ -3,8 +3,8 @@
 Squad::Squad(): _count(0), _unit(NULL) {    
 }
 
-Squad::Squad(Squad const & rhs) {
-
+Squad::Squad(Squad const & rhs)
+{
 	_count = rhs._count;
 	_unit = new ISpaceMarine*[_count];
 	for (int i = 0; i < _count; i++)
@@ -22,10 +22,10 @@ Squad::~Squad() {
 }
 
 Squad		&Squad::operator=(const Squad &rhs) {
-	_count = rhs._count;
 	for (int i = 0; i < _count; i++)
 		delete _unit[i];
 	delete[] _unit;
+	_count = rhs._count;
 	_unit = new ISpaceMarine*[_count];
 	for (int i = 0; i < _count; i++)
 		_unit[i] = rhs._unit[i]->clone();
@@ -57,7 +57,10 @@ int		Squad::push(ISpaceMarine *unit) {
 		for (int i = 0; i < _count; i++)
 		{
 			if (_unit[i] == unit)
+			{
+				std::cout << "Unit already in Squad" << std::endl;
 				return 1;
+			}
 		}
 		ISpaceMarine **tmp = new ISpaceMarine*[_count + 1];
 		for (int i = 0; i < _count; i++)

@@ -11,18 +11,14 @@ int main()
 	src->learnMateria(new Cure());
 	src->learnMateria(new Fire());
 
-
 	ICharacter* me = new Character("me");
 
-	AMateria* tmp = new Ice();
-	tmp = src->createMateria("ice");
+	AMateria* tmp = src->createMateria("ice");
 	me->equip(tmp);
-	tmp = new Cure();
 	tmp = src->createMateria("cure");
 	me->equip(tmp);
 	tmp = src->createMateria("fire");
 	me->equip(tmp);
-
 
 	ICharacter* bob = new Character("bob");
 

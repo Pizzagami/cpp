@@ -12,6 +12,12 @@ ISpaceMarine    *DeathAngel::clone() const {
     return (new DeathAngel(*this));
 }
 
+DeathAngel::DeathAngel(const DeathAngel & rhs)
+{
+	(void)rhs;
+	std::cout << "We have purpose" << std::endl;
+}
+
 void DeathAngel::battleCry() const {
     std::cout << "The lives of millions, and the honour of our Chapter, hang in the balance brothers. Failure is not an option." << std::endl;
 }
