@@ -16,26 +16,6 @@ void		Convertor::setFlag(int i, std::string flag) {
 	_flag[i] = flag;
 }
 
-std::string	Convertor::getFlag(int i) const {
-	return(_flag[i]);
-}
-
-char		Convertor::getChar() const {
-	return(_c);
-}
-
-int		Convertor::getInt() const {
-	return(_i);
-}
-
-float		Convertor::getFloat() const {
-	return(_f);
-}
-
-double		Convertor::getDouble() const {
-	return(_d);
-}
-
 int		Convertor::isChar(std::string str) const {
 	if (str.length() != 1 || std::isdigit(str[0]))
 		return (0);
@@ -190,6 +170,26 @@ void		Convertor::convert()
 			Convertor::setFlag(1, "impossible");
 		}
 	}
+}
+
+std::string	Convertor::getFlag(int i) const {
+	return(_flag[i]);
+}
+
+char		Convertor::getChar() const {
+	return(_c);
+}
+
+int		Convertor::getInt() const {
+	return(_i);
+}
+
+float		Convertor::getFloat() const {
+	return(_f);
+}
+
+double		Convertor::getDouble() const {
+	return(_d);
 }
 
 std::ostream	& operator<<(std::ostream &os, const Convertor & rhs)
