@@ -26,6 +26,7 @@ clean:
 
 fclean: clean
 	${RM} $(NAME)
+	rm maison
 
 re: fclean all
 	${RM} $(OBJS)

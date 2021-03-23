@@ -22,7 +22,7 @@ AForm * Intern::makeForm(std::string type, std::string target)
 		if (type == tab[i]->getName())
 		{
 			ret = tab[i];
-			std::cout << "Intern creates " << ret->getName();
+			std::cout << "Intern creates " << ret->getName() << std::endl;
 		}
 		else
 			delete tab[i];
