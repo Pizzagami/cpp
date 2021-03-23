@@ -28,7 +28,7 @@ AForm::AForm() {}
 
 AForm::~AForm() {}
 
-AForm::AForm(const AForm & rhs) : _name(rhs._name), _execGrade(rhs._execGrade) ,_signGrade(rhs._signGrade)
+AForm::AForm(const AForm & rhs) : _name(rhs._name), _execGrade(rhs._execGrade), _signGrade(rhs._signGrade)
 {
 	(*(this) = rhs);
 }

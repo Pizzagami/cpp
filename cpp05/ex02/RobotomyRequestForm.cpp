@@ -21,7 +21,7 @@ void RobotomyRequestForm::subExecute(Bureaucrat const & executor) const
 
 RobotomyRequestForm	&	RobotomyRequestForm::operator=(const RobotomyRequestForm & rhs)
 {
-	AForm::operator=(rhs);
+	(void)rhs;
 	return (*(this));
 }
 

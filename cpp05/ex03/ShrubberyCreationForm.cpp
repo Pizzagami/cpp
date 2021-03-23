@@ -22,7 +22,7 @@ void ShrubberyCreationForm::subExecute(Bureaucrat const & executor) const
 
 ShrubberyCreationForm	&	ShrubberyCreationForm::operator=(const ShrubberyCreationForm & rhs)
 {
-	AForm::operator=(rhs);
+	(void)rhs;
 	return (*(this));
 }
 

@@ -1,7 +1,7 @@
 NAME = Bureaucratie
 
-SRCS =	./Bureaucrat.cpp	\
-	./main.cpp
+SRCS =	./Bureaucrat.cpp		\
+		./main.cpp
 
 FSANITIZE = -fsanitize=address -g3
 
