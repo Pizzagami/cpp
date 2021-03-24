@@ -38,7 +38,7 @@ int		Convertor::isInt(std::string str) const {
 
 int		Convertor::isFloat(std::string str) const {
 	size_t	i = 0;
-	int	n = 0;
+	int		n = 0;
 
 	if (str[0] == '+' || str[0] == '-')
 		i = 1;
@@ -55,14 +55,14 @@ int		Convertor::isFloat(std::string str) const {
 		}
 		i++;
 	}
-	if (n != 1)
+	if (n > 1)
 		return (0);
 	return (1);
 }
 
 int		Convertor::isDouble(std::string str) const {
 	size_t	i = 0;
-	int	n = 0;
+	int		n = 0;
 
 	if (str[0] == '+' || str[0] == '-')
 		i = 1;
