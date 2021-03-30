@@ -1,6 +1,7 @@
 #ifndef SPAN_HPP
 # define SPAN_HPP
 
+#include <algorithm>
 #include <iostream>
 #include <stdexcept>
 #include <vector>
@@ -19,7 +20,7 @@ class span
 		void addNumber(std::vector<int>::iterator f, std::vector<int>::iterator l);
 		int	longestSpan(void);
 		int shortestSpan(void);
-//	private:
+	private:
 		unsigned int _n;
 		std::vector<int> _vec;
 		unsigned int _i;
